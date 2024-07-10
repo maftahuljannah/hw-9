@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1170px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+   margin: 0; 
+}
+:root{
+    --bg-color: #02918c;
+}
+/* nav s */
+nav{
+    background-color: var(--bg-color);
+}
+nav .row{
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li{
+    display: inline-block;
+    padding: 26px 25px;
+}
+nav ul li {
+    text-transform: uppercase;
+    color: #ffff;
+}
+nav ul li{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+}
+nav .menu{
+   background-color: #ffeaa7;
+   position: absolute; 
+   width: 200px;
+   text-align: center;
+   opacity: 0;
+   margin-top: 10px;
+
+}
+nav .menu{
+    display: block;
+    width: 200px;
+}
+nav .menu a{
+
+    color: black;
+
+}
+nav .menu li a:hover{
+background: #fab1a0;
+}
+nav ul .link:hover .menu{
+  opacity: 1;
+  transition: 0.5s;
+
+}
+/* nav end */
+#banner1{
+    background-image: url(./image/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 725px;
+    color: #ffff;
+    
+}
+#banner1 .row{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 725px;
+}
+h4{
+    font-size: 30px;
+    font-family:  "Open Sans", sans-serif;
+    font-weight: 300px;
+}
+h1{
+    font-size: 68px;
+    font-family:  "Open Sans", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+}
+#banner1 p{
+    font-size: 18px;
+    font-family:  "Open Sans", sans-serif;
+}
+.btn-group{
+    margin: 30px 0 50px 0;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    display: inline-block;
+    position: relative;
+}
+
+a::before,::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #ffeaa7;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+a::before{
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 3px;
+}
+
+a::after{
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+}        
+a:hover::before {
+    width: 100%;
+    transition-delay: 0s;
+}
+a:hover::after{
+  width: 100%;
+  transition-delay: 0s;
+}
+
+button::before,span::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #ffeaa7;
+    transition: 0.5s; 
+    transition-delay: 0s; 
+}
+    
+button::before{
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 0;
+}
+
+button::after{
+    right: 0;
+    bottom: 0;
+    width: 3px;
+    height: 0;
+}        
+a:hover button::before {
+    height: 100%;
+    transition: 0.5s;
+}
+a:hover button::after{
+  height: 100%;
+  transition: 0.5s;
+}
+
+#banner1 button{
+    display: inline-block;
+    border: none;
+    background-color: rgb(182, 182, 14);
+    padding: 19px 48px;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+#test{
+    padding: 100px 0;
+}
+#test .head{
+    text-align: center;
+    padding: 0 140px;
+}
+#test .head h2{
+    color:#02918c;
+    font-family:  "Open Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+#test .head span{
+    color: #7e8287;
+}
+#test .head p{
+    color: #7e8287;
+    line-height: 20px;
+
+}
+
+
+.collam{
+    flex-basis: 25%;
+    background: #ffff;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    width: 100%;
+
+}
+.collam h4{
+    text-align: center;
+    font-weight: 100;
+    margin: 20px;
+
+}
+.collam p{
+    text-align: center;
+}
+.collam .img{
+ text-align: center;
+}
+
+#banner2{
+    background-image: url(./image/MYFOLIO-opacity.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 725px;
+
+    
+}
+
+#banner2 .head2 h2{
+     color: #02918c;
+    text-align: center;
+    text-transform: uppercase;
+    padding-left: 10px;
+    font-weight: 800;
+}
+#banner2 .head2{
+    width: 50%;
+    text-align: center;
+    
+}
+#banner2 .head2 p{
+    font-size: small;
+}
+.row2{
+    display: flex;
+flex-wrap: wrap;
+
+}
+.collam2{
+    box-sizing: border-box;
+padding: 5px;
+ flex-basis: 50%;  
+}
